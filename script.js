@@ -23,7 +23,7 @@
         fuel: "Flex", 
         // Agora aceita várias fotos:
         imgs: [
-            "./img/onix.png",
+            "./img/Onix.png",
             "./img/t.jpg",
             "./img/internaOnix.webp"
         ] 
