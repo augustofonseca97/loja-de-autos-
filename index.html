@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Motors - Loja de Carros</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+
+    <header>
+        <h1>Premium<span>Motors</span></h1>
+    </header>
+
+    <div class="container">
+        
+        <!-- BARRA LATERAL DE FILTROS -->
+        <aside class="aside-filters">
+            <h3>Filtros</h3>
+            
+            <!-- Filtro Marca -->
+            <div class="filter-group">
+                <label for="filter-brand">Marca</label>
+                <select id="filter-brand">
+                    <option value="">Todas</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Porshe">Porshe</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                </select>
+            </div>
+
+            <!-- Filtro Preço Máximo -->
+            <div class="filter-group">
+                <label for="filter-price">Preço Máximo</label>
+                <select id="filter-price">
+                    <option value="">Qualquer preço</option>
+                    <option value="50000">Até R$ 50.000</option>
+                    <option value="80000">Até R$ 80.000</option>
+                    <option value="120000">Até R$ 120.000</option>
+                    <option value="200000">Até R$ 200.000</option>
+                    <option value="500000">Até R$ 500.000</option>
+                    <option value="1000000">Até R$ 1.000.000</option>
+                </select>
+            </div>
+
+            <!-- Filtro KM Máximo -->
+            <div class="filter-group">
+                <label for="filter-km">Quilometragem Máxima</label>
+                <select id="filter-km">
+                    <option value="">Qualquer KM</option>
+                    <option value="0">Apenas Novo (0 KM)</option>
+                    <option value="20000">Até 20.000 KM</option>
+                    <option value="60000">Até 60.000 KM</option>
+                    <option value="100000">Até 100.000 KM</option>
+                </select>
+            </div>
+
+            <!-- Filtro Ano Mínimo -->
+            <div class="filter-group">
+                <label for="filter-year">Ano Mínimo</label>
+                <select id="filter-year">
+                    <option value="">Qualquer Ano</option>
+                    <option value="2015">A partir de 2015</option>
+                    <option value="2018">A partir de 2018</option>
+                    <option value="2020">A partir de 2020</option>
+                    <option value="2023">A partir de 2023</option>
+                </select>
+            </div>
+
+            <!-- Filtro Combustível -->
+            <div class="filter-group">
+                <label for="filter-fuel">Combustível</label>
+                <select id="filter-fuel">
+                    <option value="">Todos</option>
+                    <option value="Flex">Flex</option>
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Híbrido/Elétrico">Híbrido/Elétrico</option>
+                </select>
+            </div>
+
+            <button class="btn-clear" id="btn-clear">Limpar Filtros</button>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main>
+            <!-- Input de Pesquisa por Texto -->
+            <div class="search-bar-container">
+                <input type="text" id="search-input" placeholder="Digite o nome do carro que você procura... (Ex: Civic, Onix...)">
+            </div>
+
+            <!-- Grid onde os carros vão aparecer -->
+            <div class="cars-grid" id="cars-grid">
+                <!-- Inserido dinamicamente via JS -->
+            </div>
+        </main>
+
+    </div>
+    
+    <!-- --- RODAPÉ (FOOTER) --- -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Coluna da Logo/Nome -->
+        <div class="footer-box">
+            <h2>Premium<span>Motors</span></h2>
+            <p>O carro dos seus sonhos está a um clique de distância.</p>
+        </div>
+
+        <!-- Coluna de Links Úteis ou Info -->
+        <div class="footer-box">
+            <h3>Atendimento</h3>
+            <p>Segunda a Sexta: 8h às 18h</p>
+            <p>Sábado: 8h às 13h</p>
+        </div>
+
+        <!-- Coluna das Redes Sociais e Contato -->
+        <div class="footer-box">
+            <h3>Siga-nos / Contato</h3>
+            <div class="social-icons">
+                <!-- Link do Instagram -->
+                <a href="https://instagram.com/seu_perfil" target="_blank" class="icon-instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Link do WhatsApp -->
+                <a href="https://wa.me/5500999999999" target="_blank" class="icon-whatsapp" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Direitos Autorais -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Premium Motors. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- LINK IMPORTANTE: Importa os ícones do Font Awesome (Cole isso também no final ou no head) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+
+    
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
